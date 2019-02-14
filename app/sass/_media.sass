@@ -1,0 +1,185 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.minsk
+		p
+			padding: 0 50px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	header
+		padding: 10px 0
+		min-height: 104px
+	h1 
+		font-size: 40px
+	.hero
+		padding-bottom: 50px
+
+		.hero-back-img
+			width: 30%
+			right: -2%
+			bottom: 45%
+
+		h1
+			.fa-mouse-pointer
+				right: 9px
+				font-size: 12px
+
+	.light-section
+		padding: 50px 0
+		p
+			font-size: 21px
+			line-height: 30px
+			margin-left: 0
+			margin-top: 0
+			margin-bottom: 20px
+
+			&.right-text
+				margin-left: 0
+				margin-top: 0
+				& + .text-link
+					margin-left: 0
+	blockquote 
+		.blockquote-text
+			&:before
+				margin-left: -50px
+				margin-top: -6px
+				content: '"'
+				font-size: 40px
+				line-height: 52px
+				width: 30px
+				height: 30px
+
+			&:after
+				margin-top: 3px
+				margin-left: 11px
+				content: '"'
+				font-size: 20px
+				line-height: 33px
+				width: 20px
+				height: 20px
+	.minsk
+		padding: 50px 0 50px
+
+		p
+			font-size: 21px
+			line-height: 30px
+
+	footer
+		padding: 30px 0
+
+		.navbar-brand
+			margin-top: 0
+		
+		.social-list
+			margin-top: 30px
+			margin-right: 7px
+
+		.copyright
+			margin-top: 0
+
+	.u-hamburger
+		position: absolute !important
+		top: 50%
+		right: 15px
+		transform: translate(0, -50%)
+
+		&.collapsed
+			.u-hamburger__inner
+				&::after
+					top: 1.25rem
+
+		&:not(.collapsed)
+			position: fixed !important
+			top: 52px
+
+			.u-hamburger__box
+				height: 2.72rem
+				.u-hamburger__inner
+					top: 0.8rem
+
+	#navBar
+		transition: none
+		position: fixed !important
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow-y: auto
+		z-index: 3
+		background: $green
+
+		.navbar-nav
+			padding: 80px 20px 30px
+
+			.nav-link
+				color: #fff
+
+	.my-account-btn
+		margin-top: 20px
+		width: 100%
+
+	.get-in-touch
+		font-size: 16px
+
+@media only screen and (max-width : 540px)
+	header
+		padding: 1.222rem 0
+		.navbar-brand
+			width: 160px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+	.navbar-toggler 
+		display: none
+	
+	#navBar
+		&.navbar-collapse
+			display: -ms-flexbox !important
+			display: flex !important
+			-ms-flex-preferred-size: auto
+			flex-basis: auto
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.header-wrapper
+		max-width: 1140px
+

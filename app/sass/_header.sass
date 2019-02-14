@@ -1,0 +1,67 @@
+header
+    padding: 22px 0 15px
+
+.navbar-brand
+    padding-top: 9px
+    width: 92%
+    min-width: 160px
+    max-width: 220px
+
+    img
+        max-width: 100%
+
+.navbar-expand-md
+    &.main-nav
+        width: 100%
+        margin-top: 8px
+
+        .navbar-nav
+            li
+                margin-right: 26px
+                &:last-child
+                    margin-right: 0
+
+    .navbar-nav
+        li
+            &:first-child
+
+        .nav-link
+            position: relative
+            color: $main-color
+            font-size: 17px
+            font-family: "HeroNew-bold"
+            padding: .5rem 0
+            letter-spacing: 0.013em
+                
+            &.active
+                &:after
+                    content: ""
+                    display: block
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    height: 5px
+                    border-radius: 5px
+                    background: $green
+
+.sublinks-nav
+    &.navbar-nav
+        li
+            margin-right: 29px
+
+            &:last-child
+                margin-right: 0
+
+        .nav-link
+            padding: .2rem 0
+            font-family: "HeroNew-regular"
+            font-size: 15px
+
+.my-account-btn
+    padding: 10px 30px
+    margin-top: 41px
+    font-family: "HeroNew-bold"
+    letter-spacing: 0.03em
+
+    i
+        margin-right: 5px
